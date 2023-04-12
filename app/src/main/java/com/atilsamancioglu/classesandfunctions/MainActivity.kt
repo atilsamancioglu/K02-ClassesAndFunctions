@@ -3,19 +3,25 @@ package com.atilsamancioglu.classesandfunctions
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
-
+import android.widget.EditText
+import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity() {
 
-
+    lateinit var nameText : EditText
+    lateinit var ageText : EditText
+    lateinit var jobText : EditText
+    lateinit var resultText : TextView
     private var name = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        nameText = findViewById(R.id.nameText)
+        ageText = findViewById(R.id.ageText)
+        jobText = findViewById(R.id.jobText)
+        resultText = findViewById(R.id.resultText)
         test()
 
         //Void - Unit
