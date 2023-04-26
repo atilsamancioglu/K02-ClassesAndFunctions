@@ -1,25 +1,33 @@
 package com.atilsamancioglu.classesandfunctions
 
-open class Simpson(var name:String, var age:Int?, var job:String) {
+//primary constructor
+class Simpson( var name : String, var age: Int, var job: String) {
 
-    var hairColor = ""
+    private var height = 0
 
-    fun changeHairColor() {
-        this.hairColor = "Yellow"
+    fun setHeight(num : Int) {
+        if (num > 100) {
+            height = num
+        }
     }
 
     /*
     //Property
-    var age = 0
     var name = ""
+    var age = 0
     var job = ""
+    var weight = 0
+    var height = 0
 
-    constructor(ageInput: Int, nameInput: String, jobInput: String) {
-        this.age = ageInput
-        this.name = nameInput
-        this.job = jobInput
+    //Secondary Constructor
+    constructor(name : String, age : Int, job : String, weight : Int) {
+        this.name = name
+        this.age = age
+        this.job = job
+        this.weight = weight
     }
 
      */
 
 }
+
